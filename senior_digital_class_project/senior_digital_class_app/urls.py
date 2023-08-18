@@ -11,6 +11,7 @@ urlpatterns = [
     path('email-guide', views.emailGuide),
     path('mobile-notification-guide', views.mobilenotificationGuide),
     path('quiz', views.quiz),
+    path('quiz_ans', views.quiz_ans)
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)

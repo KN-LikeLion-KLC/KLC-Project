@@ -18,8 +18,11 @@ def emailGuide(request):
     return render(request, 'email_guide.html')
 
 def mobilenotificationGuide(request):
-    context = {'img': list(range(1, 20))}
+    context = {'img': list(range(1, 16))}
     return render(request, 'mobile_notification_guide.html', context)
 
 def quiz(request):
     return render(request, 'quiz.html')
+
+def quiz_ans(request):
+    return render(request, 'quiz_ans.html')
